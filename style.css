@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    background: #F0F8FF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+   padding: 1% 6%;
+}
+
+header h1{
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 35%;
+    text-align: center;
+    letter-spacing: 0.5em;
+    color: #102c54;
+}
+
+main { 
+    justify-content: space-evenly;
+}
+
+.principal {
+    width: 70%;
+    display: inline-block;
+    flex-wrap: wrap;
+    
+}
+
+.primario {
+    padding: 2% 0 2% 18%;
+    font-size: 16px;
+}
+
+#ingreso {
+    width: 95%;
+    border: none;
+    resize: none;
+    background: #F0F8FF;
+    font-size: 25px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+::placeholder {color: #1560BD;}
+
+.secundario {
+    padding: 2% 0 2% 18%;
+}
+
+.secundario p {
+    font-size: 16px;
+}
+
+.input-encriptar {
+    padding: 1em 0;
+    width:30%;
+    border-radius: 20px;
+    margin: 1em 0;
+    font-size: 20px;
+    font-weight: bold;
+    border: #6495ED solid 1px;
+    background: #102c54;
+    color: white;
+    cursor: pointer;
+}
+
+.input-desencriptar {
+    padding: 1em 0;
+    width:30%;
+    border-radius: 20px;
+    margin: 0 2em;
+    font-size: 20px;
+    font-weight: bold;
+    border: #6495ED solid 1px;
+    background: #ADD8E6;
+    color: #1560BD;
+    cursor: pointer;
+}
+
+.input-encriptar:hover, .input-desencriptar:hover {
+        background: burlywood;
+}
+
+input:active{
+    transform: scale(1.1);
+}
+
+.terciario {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    width: 25%;
+    height: 50%;
+    color: #1560BD;
+    border-radius: 20px;
+    background: white;
+}
+
+.terciario ul li {
+    
+    padding: auto 0;
+    text-align: center;
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.terciario li h2 {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.input-copiar {
+    background: #ADD8E6;
+    padding: 10px 0;
+    color: #1560BD;
+    width: 50%;
+    margin: 18px 25%;
+    border-radius: 20px;
+    font-size: 20px;
+    border: #6495ED solid 1px;
+    cursor: pointer;
+}
+
+.input-copiar:hover {
+    background: burlywood;
+}
+
+#mensaje-inicial{
+   transition: all .7s;
+   padding: 20% 0;
+   box-sizing: border-box;
+   overflow: hidden;
+   position: relative;
+}
+
+#mensaje-final{
+    width: 100%;
+    border-radius: 20px;
+    background: white;
+    display: none;
+    transition: all .7s;
+    border: none;
+    resize: none;
+    justify-content: space-evenly;
+}
+
+#copia{
+    margin-left: 20px;
+    font-size: 25px;
+    width: 90%;
+    border: none;
+    resize: none;
+}
+
+footer {
+    text-align: center;
+    background: #252850;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
+footer p {
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.link {
+    padding: 1px 5px;
+    width: 50px;
+}
+
+.link:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+
+@media screen and (max-width:930px) {
+    
+    header {
+        width: 100%;
+        display: inline-flex;
+    }
+
+    header h1 {
+        margin-left: 10%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .principal, .primario, .secundario, .terciario {
+        width: 100%;
+    }
+    
+    .terciario {
+        margin-top: 1em;
+        display: inline-flex;
+    }
+
+    ul {
+        width: 100%;
+        align-items: center;
+    }
+
+    .secundario {
+        margin-right: 10%;
+    }
+
+    #mensaje-inicial, #mensaje-final {
+        width: 100%;
+    }
+
+    #mensaje-final {
+        margin: auto;
+    }
+
+    .input-encriptar, .input-desencriptar {
+        width: 45%;
+        margin: 1em 0;
+    }
+
+    .input-copiar {
+        width: 40%;
+        margin: 1em 30%;
+        text-align: center;
+    }
+        
+
+    .input-desencriptar {
+        margin-left: 15px;
+    }
+
+    #copia {
+        margin: 20px 0 0 20px;
+        border-radius: 0%;
+    }
+
+    footer {
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .muneco {
+        display: none;
+    }
+    
+}
