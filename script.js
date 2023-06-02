@@ -72,5 +72,5 @@ function copiar() {
 
 }
 
-botonCopiar.onclick = copiar;
+
 
